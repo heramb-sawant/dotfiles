@@ -1,0 +1,62 @@
+# Get editor completions based on the config schema
+# "$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+[character]
+error_symbol = "[❯](bold red)"
+format = "$symbol "
+success_symbol = "[❯](bold green)"
+
+[git_branch]
+always_show_remote = false
+format = "- [$branch(:$remote_branch)]($style) "
+ignore_branches = []
+only_attached = false
+style = "bold purple"
+
+[git_commit]
+disabled = true
+
+[git_state]
+am = "AM"
+am_or_rebase = "AM/REBASE"
+bisect = "BISECTING"
+cherry_pick = "CHERRY-PICKING"
+disabled = false
+format = "\\([$state( $progress_current/$progress_total)]($style)\\) "
+merge = "MERGING"
+rebase = "REBASING"
+revert = "REVERTING"
+style = "bold yellow"
+
+[git_metrics]
+added_style ="bold green"
+deleted_style ="bold red"
+disabled = false
+format ="\\(([+$added]($added_style) )([-$deleted]($deleted_style))\\) "
+ignore_submodules = false
+only_nonzero_diffs = true
+
+[git_status]
+ahead = "⇡"
+behind = "⇣"
+conflicted = "="
+deleted = "✘"
+disabled = false
+diverged = "⇕"
+format = "([$ahead_behind](blue bold) [$all_status]($style))"
+ignore_submodules = false
+modified = "!"
+renamed = "»"
+staged = "+"
+stashed = "≡"
+style = "yellow bold"
+typechanged = ""
+untracked = "?"
+up_to_date = ""
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
