@@ -4,9 +4,19 @@ echo "Installing brew..."
 
 if command -v brew &>/dev/null; then
   echo "${0}: brew is already installed"
-  exit 0
+else
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo "Installing packages..."
 
-echo "Installed brew..."
+# cask "1password"
+# cask "google-chrome"
+
+brew install make
+brew install stow
+brew install node
+brew install nvm
+brew install starship
+
+echo "Brew installation complete..."
