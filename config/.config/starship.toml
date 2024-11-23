@@ -40,12 +40,12 @@ ignore_submodules = false
 only_nonzero_diffs = true
 
 [git_status]
-ahead = "⇡"
-behind = "⇣"
+ahead = "↑"
+behind = "↓"
 conflicted = "="
 deleted = "✘"
 disabled = false
-diverged = "⇕"
+diverged = "↑↓"
 format = "([$ahead_behind](blue bold) [$all_status]($style))"
 ignore_submodules = false
 modified = "!"
