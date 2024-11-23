@@ -4,11 +4,26 @@ DOTFILES   := bash config
 
 all: brew install
 
-brew: ## Install brew
-	@sh ./scripts/brew.sh
-
 list: ## Show dot files in this repo
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
+
+dr-link: ## Dryrun a re symlink
+	@echo '==> Symlinking dotfiles...'
+	@echo ''
+	@$(foreach val, $(DOTFILES), stow -n -v -R $(val);)
+	@echo '==> Completed symlinking dotfiles...'
+
+link: ## Symlink to home directory
+	@echo '==> Symlinking dotfiles...'
+	@echo ''
+	@$(foreach val, $(DOTFILES), stow -v -S $(val);)
+	@echo '==> Completed symlinking dotfiles...'
+
+unlink: ## Remove symlinks to home directory
+	@echo 'Removing symlinks...'
+	@echo ''
+	@-$(foreach val, $(DOTFILES), stow -v -D $(val);)
+	@echo 'Removed symlinks...'
 
 help: ## Self-documented Makefile
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
