@@ -5,9 +5,9 @@
 add_newline = false
 
 [character]
-error_symbol = "[❯](bold red)"
+error_symbol = "[❯❯❯](bold red)"
 format = "$symbol "
-success_symbol = "[❯](bold green)"
+success_symbol = "[❯❯❯](bold green)"
 
 [git_branch]
 always_show_remote = false
