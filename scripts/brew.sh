@@ -18,5 +18,7 @@ brew install stow
 brew install node
 brew install nvm
 brew install starship
+brew install starship
+brew install fzf
 
 echo "Brew installation complete..."
