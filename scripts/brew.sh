@@ -10,14 +10,15 @@ fi
 
 echo "Installing packages..."
 
-# cask "1password"
-# cask "google-chrome"
-
 brew install make
 brew install stow
 brew install node
 brew install nvm
 brew install starship
 brew install fzf
+
+# cask "1password"
+# cask "google-chrome"
+brew install --cask font-hack-nerd-font
 
 echo "Brew installation complete..."
