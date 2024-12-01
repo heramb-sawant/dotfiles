@@ -1,39 +1,10 @@
-# [include]
-#   path = ~/.gitconfig.local
-# [include]
-#   path = ~/.gitconfig.themes
-# [core]
-#   excludesfile = ~/.gitignore_global
-#   ignorecase = false
-#   editor = nvim
-# [alias]
-#   undo = reset --soft HEAD^
-#   cleanup = "!git branch --merged | grep -Ev '(^\\*|master|main|dev)' | xargs git branch -d && echo 'Merged Branches cleaned ✨'"
-
-# remote-cleanup = "!git branch -r --merged | grep -Ev '(^\\*|master|main|dev)' | xargs -n 1 git push --delete origin && echo 'Merged Remote Branches cleaned ✨'"
-
-# undo = reset --soft HEAD~1
-# lol = log --graph --decorate --pretty=oneline --abbrev-commit
-# redo = reset --hard HEAD@{1}
-#  wip = "!f() { git add . && git commit -m 'Work in progress'; }; f"
-# https://www.reddit.com/r/commandline/comments/wf7oju/comment/iiu0pw5/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
-# [ghq]
-#   root = ~/ghq/src
-# [interactive]
-#   diffFilter = delta --color-only
-# [delta]
-#   features = tokyonight
-#   navigate = true
-#   line-numbers = true
-#   side-by-side = true
-# [merge]
-#   conflictstyle = diff3
-# [diff]
-#   tool = difftastic
-#   external = difft
-# [pull]
-#   rebase = true
-# [init]
-#   defaultBranch = main
-# [credential]
-#   helper = cache --timeout=3600
+[user]
+	name = Heramb Sawant
+	email = herambsawant11@gmail.com
+[alias]
+  cleanup = "!git branch --merged | grep -Ev '(^\\*|master|main|dev)' | xargs git branch -d && echo 'Merged Branches cleaned ✨'"
+  remote-cleanup = "!git branch -r --merged | grep -Ev '(^\\*|master|main|dev)' | xargs -n 1 git push --delete origin && echo 'Merged Remote Branches cleaned ✨'"
+  undo = reset --soft HEAD~1
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  wip = "!f() { git add . && git commit -m 'Work in progress'; }; f"
