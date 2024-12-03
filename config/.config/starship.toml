@@ -58,6 +58,9 @@ typechanged = ""
 untracked = "?"
 up_to_date = ""
 
-# Disable the package module, hiding it from the prompt completely
+# Disabled, hiding it from the prompt completely
 [package]
+disabled = true
+
+[aws]
 disabled = true
