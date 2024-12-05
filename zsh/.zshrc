@@ -9,6 +9,11 @@ function change_node_version {
 
 chpwd_functions=(change_node_version)
 
+# Load nvm, this is required for brew
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # Git fuzzy search branch switcher
 function gitco() {
   git checkout $(git branch --sort=-committerdate | fzf)
