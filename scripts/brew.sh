@@ -20,5 +20,6 @@ brew install fzf
 # cask "1password"
 # cask "google-chrome"
 brew install --cask font-hack-nerd-font
+brew install --cask rectangle # Split Screens
 
 echo "Brew installation complete..."
