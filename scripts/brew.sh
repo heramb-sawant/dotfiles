@@ -16,6 +16,7 @@ brew install node
 brew install nvm
 brew install starship
 brew install fzf
+brew install python
 
 # cask "1password"
 # cask "google-chrome"
