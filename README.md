@@ -4,6 +4,8 @@ To get started `make help`
 
 If you do not have make installed. `sh scripts/brew.sh`
 
+Fonts - You gotta change the default font in every terminal app after you install `font-hack-nerd-font` through brew.
+
 ### TODO
 
 - Add env into your shell. Figure out how to represent machines you ssh onto (QA, qa2 etc...)
@@ -17,4 +19,5 @@ If you do not have make installed. `sh scripts/brew.sh`
   - Create a PR
   - My open/all PRs and their status
   - ...
--
+- Get some temux stuff going
+- Set up some custom monitoring scripts using `htop`, `duf`, or `bpytop`
