@@ -1,4 +1,4 @@
-DOTFILES   := bash config
+DOTFILES   := bash config zsh git
 
 .DEFAULT_GOAL := help
 
