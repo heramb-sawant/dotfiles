@@ -39,5 +39,4 @@ TODO: Add this to a help command
 ### TODO
 
 - Get rid of /bash if you dont use it for a while
-- Get some temux stuff going
 - Set up some custom monitoring scripts using `htop`, `duf`, or `bpytop`

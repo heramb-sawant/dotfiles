@@ -17,6 +17,7 @@ brew install nvm
 brew install starship
 brew install fzf
 brew install python
+brew install tmux
 
 # cask "1password"
 # cask "google-chrome"
