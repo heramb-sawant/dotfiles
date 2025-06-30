@@ -8,3 +8,4 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   wip = "!f() { git add . && git commit -m 'Work in progress'; }; f"
   fza = "!git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o git add"
+  rebranch = "!git rebase -i `git merge-base HEAD master`"

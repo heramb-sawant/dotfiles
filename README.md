@@ -31,7 +31,8 @@ git remote-cleanup: delete all remote merged branches
 git undo: soft reset last comming
 git lol: pretty log of main
 git wip: Commit current changes
-git fza: fuzzy git add
+git fza: Fuzzy git add
+git rebranch: Rebase the commits on the current branch without rebasing against the parent branch
 ```
 
 TODO: Add this to a help command
